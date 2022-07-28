@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles1.css" />
+    <title>Travelo</title>
+  </head>
+  <body>
+    <nav>
+      <div class="img-logo">
+        <a href="index.html"
+          ><img
+            src="data:image/webp;base64,UklGRrQDAABXRUJQVlA4TKgDAAAviQAKEGfBqG0kScm8rgW0/HnNhIaCtm0Yd+PP+KFp20hu95+fwvMH+GUUSbaTP9cf2CVzxAKFgOzfAR5w8AMCbvqciM1DU91ZyvufpViap/Jn6E0W2K+9d/r9//6JYVWqOCPREMIiIIQBVmpYIwSIgJACpgQR/gYHaQIiIizZtu2oce5aNUqfJzkESka4wyUd8v8/CAhMopVpRP8nAGIkyXGbBQ6A8A6Qf7o40rKdQET/J0Abpz+XB8Dj8n5Szd37k+Ln2dXKzkCOwTtwvosZGKxKTYJrozlo3kRIbYXOMHotj+OC5O8w1MYG6LRrBw+ry0ButLPPPKrSkyftPmWGijTQaM/mmVpJHtpqWKLTngFIktSSXC16Ru1oF+jJM92JG97K/0kq5ysO/A7Tg+wjYWECV/T2vTz/j077Ss9V25vE6BzZFhSJ/57+lSfNtgDRFAla9qSi5c/fP+sv/tJE1la7QCc5sq3og6YGHXHL9CB7SZGg9Z7+BbkEpVJMUsit97qvU/JTLvGy2nvbPwm79V63d6Xb4BOjk+TIVtByfwHkCRTpLNwRpATHS3Ck0HBHeHUm7jjXA19miWiSFAkq9KSXLEbvSWExk1leVEmT6jWGpMYqZnsx3oTFKmZlMYMkcGUBBklyZCsRvISt21hBkjYEqbDCFWFLBiZJB/KLCkeSDIoDjwJLwCApErR+gRdV+RZ1G5gUYV+ZFaTKkFsZLxZVbmc+jAWB+SBHtoL7y8qDe+zjqNGvSZU0KV6GpwDZK+A4FVpaYIgElR/F6sS9EkTJ4EiC2d3xxsDejfiSwHq2Mk8+QuhAr6V4mnykypDz9nt3ugJLBa3KG+5H6KwtSfZQmAqL7RW9dg6kd4FYEFjNXht7+gMcSLrTQ4S0WeHqtC8IivdxPGnN0srotPVJcwCD6PQHNdqg6s4QnV32i8F0wqJJ0gfNSmA5mrZOZDtAgBokVZ4SwHHCYgRJBT4vEtQghQZ29cQlS0udtkeiDqACq/dFe9KEIT/B6n3CCC9UYfUOfHQ78AuBefba7sDt8On7p6VF9pQnsIrgeAXSg04HmEV3o17aE2Am+ZHbwsdsdNrxxl1HPWb6xWgW9fNoFvVsmW6WgWjasSW7w/z/FrykNudOe06JTvWMpEm7W+Kqmo6kaa8pMVpVbIR2nzYxmiob4TatXG4r7gZXU3W7DINfgIVpADrV2EXgef59mp1+nZ/A3anSLmaKc3SqedPf8yzf+8b0/w4="
+            alt="travelo"
+          />
+        </a>
+      </div>
+      <input type="checkbox" id="chk" />
+
+      <div class="menu">
+        <label for="chk">
+          <span class="text-menu">Menu</span>
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </div>
+      <div class="left">
+        <div class="img">
+          <a href="index.html"
+            ><img
+              src="data:image/webp;base64,UklGRrQDAABXRUJQVlA4TKgDAAAviQAKEGfBqG0kScm8rgW0/HnNhIaCtm0Yd+PP+KFp20hu95+fwvMH+GUUSbaTP9cf2CVzxAKFgOzfAR5w8AMCbvqciM1DU91ZyvufpViap/Jn6E0W2K+9d/r9//6JYVWqOCPREMIiIIQBVmpYIwSIgJACpgQR/gYHaQIiIizZtu2oce5aNUqfJzkESka4wyUd8v8/CAhMopVpRP8nAGIkyXGbBQ6A8A6Qf7o40rKdQET/J0Abpz+XB8Dj8n5Szd37k+Ln2dXKzkCOwTtwvosZGKxKTYJrozlo3kRIbYXOMHotj+OC5O8w1MYG6LRrBw+ry0ButLPPPKrSkyftPmWGijTQaM/mmVpJHtpqWKLTngFIktSSXC16Ru1oF+jJM92JG97K/0kq5ysO/A7Tg+wjYWECV/T2vTz/j077Ss9V25vE6BzZFhSJ/57+lSfNtgDRFAla9qSi5c/fP+sv/tJE1la7QCc5sq3og6YGHXHL9CB7SZGg9Z7+BbkEpVJMUsit97qvU/JTLvGy2nvbPwm79V63d6Xb4BOjk+TIVtByfwHkCRTpLNwRpATHS3Ck0HBHeHUm7jjXA19miWiSFAkq9KSXLEbvSWExk1leVEmT6jWGpMYqZnsx3oTFKmZlMYMkcGUBBklyZCsRvISt21hBkjYEqbDCFWFLBiZJB/KLCkeSDIoDjwJLwCApErR+gRdV+RZ1G5gUYV+ZFaTKkFsZLxZVbmc+jAWB+SBHtoL7y8qDe+zjqNGvSZU0KV6GpwDZK+A4FVpaYIgElR/F6sS9EkTJ4EiC2d3xxsDejfiSwHq2Mk8+QuhAr6V4mnykypDz9nt3ugJLBa3KG+5H6KwtSfZQmAqL7RW9dg6kd4FYEFjNXht7+gMcSLrTQ4S0WeHqtC8IivdxPGnN0srotPVJcwCD6PQHNdqg6s4QnV32i8F0wqJJ0gfNSmA5mrZOZDtAgBokVZ4SwHHCYgRJBT4vEtQghQZ29cQlS0udtkeiDqACq/dFe9KEIT/B6n3CCC9UYfUOfHQ78AuBefba7sDt8On7p6VF9pQnsIrgeAXSg04HmEV3o17aE2Am+ZHbwsdsdNrxxl1HPWb6xWgW9fNoFvVsmW6WgWjasSW7w/z/FrykNudOe06JTvWMpEm7W+Kqmo6kaa8pMVpVbIR2nzYxmiob4TatXG4r7gZXU3W7DINfgIVpADrV2EXgef59mp1+nZ/A3anSLmaKc3SqedPf8yzf+8b0/w4="
+              alt="travelo"
+            />
+          </a>
+        </div>
+        <ul class="ul1">
+          <li><a href="#"> Home</a></li>
+          <li><a href="#"> About</a></li>
+          <li>
+            <a href="#"> Destination</a>
+          </li>
+          <li class="hovul">
+            <a href="#"> Pages<i class="fa-solid fa-angle-down"></i></a>
+            <ul class="hov1">
+              <li><a href="#">Destination Details</a></li>
+              <li><a href="#">Elements</a></li>
+            </ul>
+          </li>
+          <li class="hovul">
+            <a href="#"> Blog<i class="fa-solid fa-angle-down"></i></a>
+            <ul class="hov1">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Single Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="#"> Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <span class="span">
+          <i class="fa-solid fa-phone"></i>10(256)-928 256</span
+        >
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+        <div class="search">
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="space"></div>
+
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade full"
+      data-bs-ride="carousel"
+      style="z-index: 0"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active item">
+          <img
+            src="https://preview.colorlib.com/theme/travelo/img/banner/xbanner2.png.pagespeed.ic.XXlHdbyWF8.jpg"
+            class="d-block"
+            alt="..."
+          />
+          <div class="text">
+            <h2>Australia</h2>
+            <p>Pixel perfect design with awesome content</p>
+            <button class="btsame">Explore Now</button>
+          </div>
+        </div>
+
+        <div class="carousel-item item">
+          <img
+            src="https://preview.colorlib.com/theme/travelo/img/banner/xbanner3.png.pagespeed.ic.Q9oCO7T4OK.jpg"
+            class="d-block"
+            alt="..."
+          />
+          <div class="text">
+            <h2>Switzerland</h2>
+            <p>Pixel perfect design with awesome content</p>
+            <button class="btsame">Explore Now</button>
+          </div>
+        </div>
+        <div class="carousel-item item">
+          <img
+            src="https://preview.colorlib.com/theme/travelo/img/banner/xbanner.png.pagespeed.ic.95MMQV933B.jpg"
+            class="d-block"
+            alt="..."
+          />
+          <div class="text">
+            <h2>Indonesia</h2>
+            <p>Pixel perfect design with awesome content</p>
+            <button class="btsame">Explore Now</button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="blueinp">
+      <span>Where you want to go?</span>
+      <input type="text" placeholder="Where to go?" />
+      <select name="Date" id="" aria-placeholder="">
+        <option value="" disabled selected>Date</option>
+        <option value="january">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+      </select>
+      <select name="Date" id="" aria-placeholder="">
+        <option value="" disabled selected>Travel type</option>
+        <option value="january">Air</option>
+        <option value="February">Sea</option>
+        <option value="March">Land</option>
+      </select>
+
+      <button>Search</button>
+    </div>
+
+    <div class="popular">
+      <h1>Popular Destination</h1>
+      <p>
+        Suffered alteration in some form, by injected humour or good day
+        randomised booth anim 8-bit hella wolf moon beard words.
+      </p>
+      <div class="destinations">
+        <div class="one">
+          <!--<img
+            src="https://preview.colorlib.com/theme/travelo/img/destination/x1.png.pagespeed.ic.U57u1BX_9-.webp"
+            alt=""
+          />-->
+          <div class="plcs">
+            <span>Italy</span>
+            <button>07 Places</button>
+          </div>
+        </div>
+        <div class="two">
+          <!--<img
+            src="https://preview.colorlib.com/theme/travelo/img/destination/x2.png.pagespeed.ic.84P8l8vv4O.webp"
+            alt=""
+          />-->
+          <div class="plcs">
+            <span>Brazil</span>
+            <button>03 Places</button>
+          </div>
+        </div>
+        <div class="three">
+          <!--<img
+            src="https://preview.colorlib.com/theme/travelo/img/destination/x3.png.pagespeed.ic.78W6B32hsk.webp"
+            alt=""
+          />-->
+          <div class="plcs">
+            <span>Italy</span>
+            <button>07 Places</button>
+          </div>
+        </div>
+        <div class="four">
+          <!--<img
+            src="https://preview.colorlib.com/theme/travelo/img/destination/x4.png.pagespeed.ic.eWKrFKhuKv.webp"
+            alt=""
+          />-->
+          <div class="plcs">
+            <span>Italy</span>
+            <button>07 Places</button>
+          </div>
+        </div>
+        <div class="five">
+          <!--<img
+            src="https://preview.colorlib.com/theme/travelo/img/destination/x5.png.pagespeed.ic.w9itzKnbmP.webp"
+            alt=""
+          />-->
+          <div class="plcs">
+            <span>Italy</span>
+            <button>07 Places</button>
+          </div>
+        </div>
+        <div class="six">
+          <!--<img
+            src="https://preview.colorlib.com/theme/travelo/img/destination/x6.png.pagespeed.ic.G2cL_XuMxk.webp"
+            alt=""
+          />-->
+          <div class="plcs">
+            <span>Italy</span>
+            <button>07 Places</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe">
+      <div class="sub-parent">
+        <div class="childh">
+          <h4>Subscribe Our Newsletter</h4>
+          <p>
+            Subscribe newsletter to get offers and about new places to discover.
+          </p>
+        </div>
+        <div class="sub-email">
+          <input type="text" placeholder="Your Email" />
+        </div>
+        <div class="sub-button">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popular places">
+      <h1>Popular Places</h1>
+      <p>
+        Suffered alteration in some form, by injected humour or good day
+        randomised booth anim 8-bit hella wolf moon beard words.
+      </p>
+      <div class="popular-list">
+        <div class="california">
+          <div class="pricing">
+            <button>$500</button>
+            <div class="stars">
+              <h5>California</h5>
+              <h6>United State of America</h6>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <a href="#">(20 Review)</a>
+              <span><i class="fa fa-clock-o"></i>5 Days</span>
+            </div>
+          </div>
+        </div>
+        <div class="korola">
+          <div class="pricing">
+            <button>$500</button>
+            <div class="stars">
+              <h5>Korola Megna</h5>
+              <h6>United State of America</h6>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <a href="#">(20 Review)</a>
+              <span><i class="fa fa-clock-o"></i>5 Days</span>
+            </div>
+          </div>
+        </div>
+        <div class="london">
+          <div class="pricing">
+            <button>$500</button>
+            <div class="stars">
+              <h5>London</h5>
+              <h6>United Kingdom</h6>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <a href="#">(20 Review)</a>
+              <span><i class="fa fa-clock-o"></i>5 Days</span>
+            </div>
+          </div>
+        </div>
+        <div class="miami">
+          <div class="pricing">
+            <button>$500</button>
+            <div class="stars">
+              <h5>Miami</h5>
+              <h6>United State of America</h6>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <a href="#">(20 Review)</a>
+              <span><i class="fa fa-clock-o"></i>5 Days</span>
+            </div>
+          </div>
+        </div>
+        <div class="cali">
+          <div class="pricing">
+            <button>$500</button>
+            <div class="stars">
+              <h5>California</h5>
+              <h6>United States Of America</h6>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <a href="#">(20 Review)</a>
+              <span><i class="fa fa-clock-o"></i>5 Days</span>
+            </div>
+          </div>
+        </div>
+        <div class="iceland">
+          <div class="pricing">
+            <button>$500</button>
+            <div class="stars">
+              <h5>Saintmartine Islad</h5>
+              <h6>France/Netherlands</h6>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <i class="fa-solid fa-star st"></i>
+              <a href="#">(20 Review)</a>
+              <span><i class="fa fa-clock-o"></i>5 Days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="more">More Places</button>
+    </div>
+    <div class="video">
+      <div><h3>Enjoy Video</h3></div>
+      <div class="click"></div>
+      <div class="anim"><i class="fa-solid fa-play"></i></div>
+    </div>
+    <div class="flex-icons">
+      <div class="train">
+        <img
+          src="https://preview.colorlib.com/theme/travelo/img/svg_icon/1.svg"
+          alt=""
+        />
+        <h3>Comfortable Journey</h3>
+        <p>
+          A wonderful serenity has taken to the possession of my entire soul.
+        </p>
+      </div>
+      <div class="hotel">
+        <img
+          src="https://preview.colorlib.com/theme/travelo/img/svg_icon/2.svg"
+          alt=""
+        />
+        <h3>Luxurious Hotels</h3>
+        <p>
+          A wonderful serenity has taken to the possession of my entire soul.
+        </p>
+      </div>
+      <div class="globe">
+        <img
+          src="https://preview.colorlib.com/theme/travelo/img/svg_icon/3.svg"
+          alt=""
+        />
+        <h3>Travel Guide</h3>
+        <p>
+          A wonderful serenity has taken to the possession of my entire soul.
+        </p>
+      </div>
+    </div>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active bt"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+          class="bt"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+          class="bt"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active car-replace">
+          <img
+            src="https://preview.colorlib.com/theme/travelo/img/testmonial/xauthor.png.pagespeed.ic.bYK1hmTXSr.webp"
+            class="d-block"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              "Working in conjunction with humanitarian aid agencies, we have
+              supported programmes to help alleviate human suffering."
+            </h5>
+            <p>- Jerry the Mouse</p>
+          </div>
+        </div>
+        <div class="carousel-item car-replace">
+          <img
+            src="https://preview.colorlib.com/theme/travelo/img/testmonial/xauthor.png.pagespeed.ic.bYK1hmTXSr.webp"
+            class="d-block"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              "Working in conjunction with humanitarian aid agencies, we have
+              supported programmes to help alleviate human suffering."
+            </h5>
+            <p>-Jerry the Mouse</p>
+          </div>
+        </div>
+        <div class="carousel-item car-replace">
+          <img
+            src="https://preview.colorlib.com/theme/travelo/img/testmonial/xauthor.png.pagespeed.ic.bYK1hmTXSr.webp"
+            class="d-block"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              "Working in conjunction with humanitarian aid agencies, we have
+              supported programmes to help alleviate human suffering."
+            </h5>
+            <p>Jerry the Mouse</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recent-trips">
+      <h1>Recent Trips</h1>
+      <div class="trips">
+        <div class="castle">
+          <img
+            src="https://preview.colorlib.com/theme/travelo/img/trip/x1.png.pagespeed.ic.TCe9EhKBE3.webp"
+            alt=""
+          />
+          <p>Jul. 16. 2022</p>
+          <h4>Journeys Are Best Measured In New Friends</h4>
+        </div>
+        <div class="castle">
+          <img
+            src="https://preview.colorlib.com/theme/travelo/img/trip/x2.png.pagespeed.ic.wrqsn2d2l2.webp"
+            alt=""
+          />
+          <p>Jul. 16. 2022</p>
+          <h4>Journeys Are Best Measured In New Friends</h4>
+        </div>
+        <div class="castle">
+          <img
+            src="https://preview.colorlib.com/theme/travelo/img/trip/x3.png.pagespeed.ic.jiKGCsekSW.webp"
+            alt=""
+          />
+          <p>Jul. 16. 2022</p>
+          <h4>Journeys Are Best Measured In New Friends</h4>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="content">
+        <div class="content-1">
+          <img
+            src="https://preview.colorlib.com/theme/travelo/img/xfooter_logo.png.pagespeed.ic.lvE0aE5-r2.webp"
+            alt=""
+          />
+          <p>5th flora, 700/D kings road, green</p>
+          <p>lane New York-1782</p>
+          <p>+10 367 826 2567</p>
+          <p>contact@carpenter.com</p>
+          <div class="footer-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="content-2">
+          <h5>Company</h5>
+          <p>Pricing</p>
+          <p>About</p>
+          <p>Gallery</p>
+          <p>Contact</p>
+        </div>
+        <div class="content-3">
+          <h5>Popular Destination</h5>
+          <div class="inner-3">
+            <div class="left-3">
+              <p>Indonesia</p>
+              <p>India</p>
+              <p>Italy</p>
+              <p>France</p>
+            </div>
+            <div class="right3">
+              <p>America</p>
+              <p>Switzerland</p>
+              <p>Canada</p>
+              <p>England</p>
+            </div>
+          </div>
+        </div>
+        <div class="content-4">
+          <h5>Instagram</h5>
+          <div class="insta">
+            <div>
+              <img
+                src="https://preview.colorlib.com/theme/travelo/img/instagram/x1.png.pagespeed.ic.LdZEUxVUOD.webp"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <img
+                src="https://preview.colorlib.com/theme/travelo/img/instagram/x2.png.pagespeed.ic.GyH5qcaE5h.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://preview.colorlib.com/theme/travelo/img/instagram/x3.png.pagespeed.ic._oM9YgJOVj.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://preview.colorlib.com/theme/travelo/img/instagram/x4.png.pagespeed.ic.NpuJK11K8C.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://preview.colorlib.com/theme/travelo/img/instagram/x5.png.pagespeed.ic.adEyUiislQ.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://preview.colorlib.com/theme/travelo/img/instagram/x6.png.pagespeed.ic.CRMjjStKwL.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <span class="bord-r">Copyright ©2022 All rights reserved</span>
+        <span
+          >This template is made with<i
+            class="fa fa-heart-o"
+            aria-hidden="true"
+          ></i>
+          by <a href="#">Colorlib</a></span
+        >
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/bc8b6ddbae.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
